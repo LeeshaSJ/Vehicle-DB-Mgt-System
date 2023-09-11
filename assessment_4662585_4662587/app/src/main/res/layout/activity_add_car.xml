@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+
+    tools:context="AddCarActivity">
+
+    <TextView
+        android:id="@+id/lblAddCar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Add Car"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imgLogo"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblAddCar"
+        app:srcCompat="@drawable/car" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:padding="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imgLogo">
+
+        <TextView
+            android:id="@+id/lblCarBrand"
+            android:layout_width="100sp"
+            android:layout_height="50sp"
+            android:gravity="center"
+            android:text="Car Brand"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/lblCarModel"
+            android:layout_width="100sp"
+            android:layout_height="50sp"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:text="Car Model"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/lblCarBrand" />
+
+        <TextView
+            android:id="@+id/lblCarPrice"
+            android:layout_width="100sp"
+            android:layout_height="50sp"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:text="Car Price"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/lblCarModel" />
+
+        <EditText
+            android:id="@+id/txtCarBrand"
+            android:layout_width="wrap_content"
+            android:layout_height="50sp"
+            android:layout_marginLeft="15sp"
+            android:background="@color/white"
+            android:textColor="@color/black"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:paddingStart="20sp"
+            android:paddingEnd="20sp"
+            app:layout_constraintStart_toEndOf="@id/lblCarBrand"
+            app:layout_constraintTop_toTopOf="@id/lblCarBrand" />
+
+        <EditText
+            android:id="@+id/txtCarModel"
+            android:layout_width="wrap_content"
+            android:layout_height="50sp"
+            android:layout_marginLeft="15sp"
+            android:background="@color/white"
+            android:textColor="@color/black"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:paddingStart="20sp"
+            android:paddingEnd="20sp"
+            app:layout_constraintStart_toEndOf="@id/lblCarModel"
+            app:layout_constraintTop_toTopOf="@id/lblCarModel" />
+
+        <EditText
+            android:id="@+id/txtCarPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="50sp"
+            android:layout_marginLeft="15sp"
+            android:background="@color/white"
+            android:textColor="@color/black"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:paddingStart="20sp"
+            android:paddingEnd="20sp"
+            app:layout_constraintStart_toEndOf="@id/lblCarPrice"
+            app:layout_constraintTop_toTopOf="@id/lblCarPrice" />
+
+        <Button
+            android:id="@+id/btnAddCar"
+            android:layout_width="250sp"
+            android:layout_height="70sp"
+            android:layout_marginTop="25dp"
+            android:text="Add Car"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtCarPrice" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
